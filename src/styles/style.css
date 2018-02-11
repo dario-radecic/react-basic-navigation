@@ -1,0 +1,92 @@
+:root {
+  /* COLORS */
+  --color-white: #fff;
+  --color-very-light-gray: #f4f4f4;
+  --color-medium-gray: #666;
+  --color-dark-gray: #333;
+  --color-green: #2ecc71;
+
+  /* SPACING AND SIZING */
+  --xs-size: .6rem;
+  --s-size: 1.2rem;
+  --m-size: 1.6rem;
+  --ml-size: 2.4rem;
+  --l-size: 3.2rem;
+  --xl-size: 4rem;
+  --xxl-size: 4.8rem;
+
+  /* TRANSITIONS */
+  --transition-default: .3s;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-very-light-gray);
+}
+
+header {
+  background: var(--color-white);
+  display: flex;
+  padding: 0 var(--ml-size);
+}
+
+.header-image {
+  height: var(--xl-size);
+  margin-top: var(--s-size);
+  margin-right: var(--s-size);
+  width: var(--xl-size);
+}
+
+header h1 {
+  flex-grow: 1;
+  font-size: var(--ml-size);
+  font-weight: 300;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 var(--s-size);
+  font-size: var(--m-size);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: var(--s-size);
+}
+
+.navlink-default {
+  color: var(--color-medium-gray);
+  text-decoration: none;
+}
+
+.navlink-default:hover {
+  color: var(--color-dark-gray);
+  font-weight: 800;
+  transition: var(--transition-default);
+}
+
+.navlink-button {
+  border: 2px solid var(--color-green);
+  border-radius: var(--xs-size);
+  color: var(--color-green);
+  padding: var(--xs-size) var(--ml-size);
+}
+
+.navlink-button:hover {
+  background: var(--color-green);
+  color: var(--color-white);
+  transition: var(--transition-default);
+}
+
+.container-main {
+  max-width: 80rem;
+  text-align: center;
+  padding: var(--l-size) 0;
+  font-size: var(--ml-size);
+}
+
+.container-main-p {
+  font-size: var(--ml-size);
+}
